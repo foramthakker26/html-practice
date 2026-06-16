@@ -1,0 +1,356 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foram Thakker | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+}
+
+header h2{
+    font-size:24px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#93c5fd;
+}
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:30px;
+    margin:5px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.section{
+    margin-bottom:35px;
+}
+
+.section h2{
+    text-align:center;
+    color:#1d4ed8;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-box,
+.project-box,
+.feature-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.skill-box:hover,
+.project-box:hover,
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h2>Foram Portfolio</h2>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Hello, I'm Foram Thakker</h1>
+    <p>Aspiring Front-End Developer creating clean and responsive websites using HTML and CSS.</p>
+
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<div class="container">
+
+<section class="section" id="about">
+    <h2>About Me</h2>
+
+    <div class="card">
+        <p>
+            I am passionate about web development and enjoy building modern,
+            user-friendly websites. I continuously improve my skills by working
+            on practical projects and learning new technologies.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="skills">
+
+<h2>My Skills</h2>
+
+<div class="grid">
+
+<div class="skill-box">
+<h3>HTML5</h3>
+<p>Semantic structure and accessible web pages.</p>
+</div>
+
+<div class="skill-box">
+<h3>CSS3</h3>
+<p>Responsive layouts and attractive interfaces.</p>
+</div>
+
+<div class="skill-box">
+<h3>Git & GitHub</h3>
+<p>Version control and project management.</p>
+</div>
+
+<div class="skill-box">
+<h3>Responsive Design</h3>
+<p>Websites that adapt across devices.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="grid">
+
+<div class="project-box">
+<h3>Portfolio Website</h3>
+<p>Created a responsive personal portfolio using HTML and CSS.</p>
+</div>
+
+<div class="project-box">
+<h3>Registration Form</h3>
+<p>Designed a structured student registration page with validation.</p>
+</div>
+
+<div class="project-box">
+<h3>Landing Page</h3>
+<p>Built a modern landing page with multiple content sections.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Learning Progress</h2>
+
+<div class="card">
+
+<table>
+
+<tr>
+<th>Technology</th>
+<th>Status</th>
+<th>Progress</th>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>Completed</td>
+<td>100%</td>
+</tr>
+
+<tr>
+<td>CSS</td>
+<td>Learning</td>
+<td>75%</td>
+</tr>
+
+<tr>
+<td>JavaScript</td>
+<td>Upcoming</td>
+<td>10%</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Why Choose Me?</h2>
+
+<div class="grid">
+
+<div class="feature-box">
+<h3>Clean Code</h3>
+<p>Readable and organized HTML & CSS.</p>
+</div>
+
+<div class="feature-box">
+<h3>Creative Design</h3>
+<p>Modern layouts with attention to detail.</p>
+</div>
+
+<div class="feature-box">
+<h3>Quick Learner</h3>
+<p>Always improving and adapting to new skills.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="card">
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea rows="5" placeholder="Write your message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Foram Thakker | Built with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
+```
