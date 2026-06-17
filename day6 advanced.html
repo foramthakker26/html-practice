@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.radio-group,
+.checkbox-group{
+    margin-bottom:15px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+iframe{
+    width:100%;
+    height:400px;
+    border:none;
+}
+
+footer{
+    text-align:center;
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Student Registration Portal</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Courses</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>About HTML</h2>
+
+<p>
+HTML is the foundation of every website. It helps create headings,
+paragraphs, forms, tables, multimedia elements, and page structure.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Available Courses</h2>
+
+<table>
+
+<tr>
+<th>Course</th>
+<th>Duration</th>
+<th>Level</th>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>4 Weeks</td>
+<td>Beginner</td>
+</tr>
+
+<tr>
+<td>CSS</td>
+<td>4 Weeks</td>
+<td>Intermediate</td>
+</tr>
+
+<tr>
+<td>JavaScript</td>
+<td>8 Weeks</td>
+<td>Advanced</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Registration Form</h2>
+
+<form>
+
+<label>Full Name</label> <input type="text" required placeholder="Enter your name">
+
+<label>Email</label> <input type="email" required placeholder="Enter your email">
+
+<label>Password</label> <input type="password" required>
+
+<label>Date of Birth</label> <input type="date">
+
+<label>City</label>
+
+<select>
+<option>Ahmedabad</option>
+<option>Gandhinagar</option>
+<option>Surat</option>
+<option>Vadodara</option>
+</select>
+
+<div class="radio-group">
+Gender:
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+</div>
+
+<div class="checkbox-group">
+Skills:
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JavaScript
+</div>
+
+<label>About Yourself</label>
+
+<textarea rows="4"></textarea>
+
+<button type="submit">
+Register
+</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h2>Working Audio Example</h2>
+
+<audio controls>
+<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+</div>
+
+<div class="card">
+
+<h2>Working Video Example</h2>
+
+<video width="100%" controls>
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+
+</div>
+
+<div class="card">
+
+<h2>Embedded YouTube Tutorial</h2>
+
+<iframe
+src="https://www.youtube.com/embed/qz0aGYrrlhU"
+title="HTML Full Course">
+</iframe>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+Day 6 HTML Advanced Project | Internship Practice
+</p>
+
+</footer>
+
+</body>
+</html>
