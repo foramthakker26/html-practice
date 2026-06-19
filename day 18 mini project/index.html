@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Calculator</title>
+</head>
+<body>
+
+    <h1>Student Grade Calculator</h1>
+
+    <button onclick="calculateGrade()">
+        Calculate Result
+    </button>
+
+    <h2 id="result"></h2>
+
+    <script>
+
+        function calculateGrade() {
+
+            let sub1 = Number(prompt("Enter Subject 1 Marks"));
+            let sub2 = Number(prompt("Enter Subject 2 Marks"));
+            let sub3 = Number(prompt("Enter Subject 3 Marks"));
+
+            let total = sub1 + sub2 + sub3;
+
+            let percentage = total / 3;
+
+            let grade;
+
+            if (percentage >= 90) {
+                grade = "A+";
+            }
+            else if (percentage >= 75) {
+                grade = "A";
+            }
+            else if (percentage >= 60) {
+                grade = "B";
+            }
+            else if (percentage >= 40) {
+                grade = "C";
+            }
+            else {
+                grade = "Fail";
+            }
+
+            document.getElementById("result").innerHTML =
+                "Total: " + total +
+                "<br>Percentage: " + percentage.toFixed(2) + "%" +
+                "<br>Grade: " + grade;
+        }
+
+    </script>
+
+</body>
+</html>
