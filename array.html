@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg,#6a11cb,#2575fc);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        margin:0;
+    }
+
+    .container{
+        background:white;
+        padding:30px;
+        border-radius:15px;
+        width:400px;
+        box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    h1{
+        text-align:center;
+        color:#333;
+    }
+
+    input{
+        width:70%;
+        padding:10px;
+        border:1px solid #ccc;
+        border-radius:5px;
+    }
+
+    button{
+        padding:10px 15px;
+        border:none;
+        background:#2575fc;
+        color:white;
+        border-radius:5px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        background:#1a5ed8;
+    }
+
+    ul{
+        margin-top:20px;
+        padding:0;
+    }
+
+    li{
+        list-style:none;
+        padding:8px;
+        background:#f2f2f2;
+        margin:5px 0;
+        border-radius:5px;
+    }
+
+    .result{
+        margin-top:20px;
+        font-weight:bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>💰 Expense Tracker</h1>
+
+    <input type="number" id="expense" placeholder="Enter expense">
+    <button onclick="addExpense()">Add</button>
+
+    <ul id="expenseList"></ul>
+
+    <div class="result" id="summary"></div>
+</div>
+
+<script>
+
+let expenses = [];
+
+function addExpense() {
+
+    let amount = Number(document.getElementById("expense").value);
+
+    if(amount <= 0){
+        alert("Enter a valid expense!");
+        return;
+    }
+
+    expenses.push(amount);
+
+    document.getElementById("expense").value = "";
+
+    displayExpenses();
+}
+
+function displayExpenses(){
+
+    let list = document.getElementById("expenseList");
+    list.innerHTML = "";
+
+    for(let expense of expenses){
+
+        list.innerHTML += `<li>₹${expense}</li>`;
+    }
+
+    let total = 0;
+
+    for(let expense of expenses){
+        total += expense;
+    }
+
+    let highest = Math.max(...expenses);
+
+    document.getElementById("summary").innerHTML =
+    `Total Expenses: ${expenses.length}<br>
+     Total Amount: ₹${total}<br>
+     Highest Expense: ₹${highest}`;
+}
+
+</script>
+
+</body>
+</html
